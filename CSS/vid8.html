@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* css-> Position: static(defult), relative, absolute,fixed,sticky */
+        .box{
+            display: inline-block;
+            border: 2px solid rgba(237, 18, 18, 0.532);
+            width: 200px;
+            height: 140px;
+            margin: 3px;
+        }
+        #box3{
+            /* position: relative; */
+            /* relative to its normal position  */
+            /* relative to parent  */
+            /* position: absolute;
+            top: 23px;
+            left: 43px;  */
+            /* fixed in one position relative to the browser window */
+            /* position: fixed;
+            right: 2px;
+            bottom: 2px; */
+            /* stuck in one position  */
+            position: sticky;
+            top: 3px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box" id="box1">1</div>
+    <div class="box" id="box2">2</div>
+    <div class="box" id="box3">3</div>
+    <div class="box" id="box4">4</div>
+</body>
+</html>

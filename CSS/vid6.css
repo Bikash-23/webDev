@@ -1,0 +1,25 @@
+.navbar{
+    background-color: #414141;
+    border-radius: 33px;
+
+}
+.navbar ul{
+    overflow: auto;
+}
+.navbar li{
+    float: left;
+    list-style: none;
+    margin: 3px 3px;
+    
+}
+.navbar li a{
+    padding: 3px 3px;
+    text-decoration: none;
+    color: rgba(245, 245, 245, 0.819);
+}
+.navbar input{
+    background-color: #fbf9f9;
+    border: 1px solid rgb(229, 32, 32);
+    padding: 5px;
+    
+}

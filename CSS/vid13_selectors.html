@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advance Selector</title>
+    <style>
+        body{
+            background-color: #414141;
+            color: #fff;
+        }
+        h2{
+            background-color: #f19c12dd;
+            font-weight: lighter;
+            text-align: center;
+        }
+        /* div li p {
+            color: rgb(130, 236, 9);
+            font-weight: bold;
+        } */
+        /* div p {
+            color: rgb(130, 236, 9);
+            font-weight: bold;
+        } */
+        /* div > p {
+            color: rgb(130, 236, 9);
+            font-weight: bold;
+        } */
+         /* p and div are siblings */
+        div+ p {
+            color: rgb(130, 236, 9);
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h2>This is more on selectors</h2>
+    <div class="container">
+        <ul>
+            <li><p>Lorem ipsum dolor sit. in ul -> li -> P</p></li>
+            <li>Lorem ipsum dolor sit amet. in ul -> li</li>
+            <p>Lorem ipsum dolor sit.in ul -> p</p>
+        </ul>
+
+        <div class="row">
+            <p>This is a Paragraph</p>
+        </div>
+        <p>This is a second Paragraph</p>
+    </div>
+    <p>This is a outer Paragraph</p>
+</body>
+</html>

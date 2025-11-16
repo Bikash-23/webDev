@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Queries</title>
+    <style>
+        body{
+            background-color: #414141;
+            color: #fff;
+        }
+        .box{
+            text-align: center;
+            font-size: 20px;
+            padding: 5px;
+            display: none;
+        }
+        @media (max-width: 300px){
+            #box-1{
+                display: block;
+                background-color:#c75858b8;
+            }
+        }
+        @media (min-width:300px) and (max-width: 500px) {
+            #box-2{
+                display: block;
+                background-color:#62bd6ab0;
+            }
+        }
+        @media (min-width:500px) and (max-width: 800px) {
+            #box-3{
+                display: block;
+                background-color:#6297bdbf;
+            }
+        }
+        @media (min-width: 800px) {
+            #box-4{
+                display: block;
+                background-color:#d2c24bbf;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box" id="box-1">iphoe</div>
+    <div class="box" id="box-2">sumsung</div>
+    <div class="box" id="box-3">OnePlus</div>
+    <div class="box" id="box-4">sony</div>
+</body>
+</html>

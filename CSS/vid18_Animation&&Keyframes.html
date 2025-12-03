@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creating Animation And Keyframes</title>
+</head>
+<style>
+    body,html{
+        color: #fff;
+    }
+    .container{
+        display: flex;
+        background-color: #71e0c6;
+    }
+    .box{
+        background-color: #414141;
+        width: 200px;
+        height: 200px;
+        padding: 10px;
+        text-align: center;
+        position: relative;
+        /* animation-name: Bik1; */
+        animation-name: Bik2;
+        animation-duration: 4s;
+        animation-iteration-count: 2;
+        /* animation-fill-mode: alternate; */
+        /* animation-fill-mode:forwards; */
+        /* animation-timing-function: ease-in; */
+        /* animation-timing-function: ease-out;  */
+        /* animation-timing-function: ease-in-out;  */
+        /* animation-delay: 0.5s; */
+        /* animation-direction: reverse; */
+        /* animation: animation-name animation-duration animation-timing-function aniamtion-delay animation-iteration-count animation-fill-mode; */
+        /* shorthand */
+        /* animation: Bik1 5s ease-in 1s  backwards ; */
+
+    }
+    @keyframes Bik1{
+        from{
+            width:200px;
+        }
+        to{
+            width: 300px;
+        }
+    }
+    @keyframes Bik2{
+        0%{
+            top: 0px;
+            left: 0px;
+        }
+        25%{
+            top: 250px;
+            left: 0px;
+        }
+        75%{
+            top: 250px;
+            left: 250px;
+        }
+        100%{
+            top: 250px;
+            left: 0px;
+        }
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="box">
+            This is a Box
+        </div>
+        <!-- <div class="box"></div>
+        <div class="box"></div> -->
+    </div>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Variables && custom Properties</title>
+    <style>
+        :root{
+            --bgc-color : #e3ddee;
+            /* css variable available throughout css */
+
+        }
+        body,html{
+            /* background-color: #414141; */
+            color: #2615ea;
+        }
+        p{
+            color: #b8216f;
+        }
+        .box{
+            --box-color : #e9f2d1;
+            --box-shadow: rgba(238, 177, 85, 0.895);
+            /*  css variable available only in slop if not use in :root */
+            height: 200px;
+            width: 200px;
+            padding: 8px;
+            text-align: center;
+            background-color: var(--box-color);
+            margin: 20px 10px;
+            border: 2px solid rgb(146, 139, 139); 
+            border-radius: 10px;
+            box-shadow:  3px 3px var(--box-shadow);
+        }
+        .container{
+            width: 100%;
+            height: 350px;
+            background-color: var(--bgc-color);
+            display: flex;
+            /* flex-direction: column; */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">Home
+            <hr/>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis sunt quam, enim accusamus aspernatur atque sint magnam magni fuga aliquam!</p>
+        </div>
+        <div class="box">About Us
+            <hr/>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime explicabo facere accusamus repudiandae perferendis ipsam nihil placeat! Iste.</p>
+        </div>
+        <div class="box">Contact Us
+            <hr/>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque quam iusto repellat autem aspernatur architecto enim exercitationem laboriosam eveniet!</p>
+        </div>
+    </div>
+</body>
+</html>

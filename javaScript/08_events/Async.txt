@@ -1,0 +1,18 @@
+javaScript
+    -> synchronous
+    -> single threaded
+----------------------------------------------------------
+execution contex
+    ->execute one line of code at a time(each operation wait for the last one to complete before execution)
+
+    ----------     -----------
+    CALL Stack     Memory Heap
+    ----------     -----------
+-----------------------------------------------------------
+Blocking code             vs  Non Blocking code
+
+block the flow of program     does not block execution
+
+read file sync                read file Async
+
+------------------------------------------------------------
